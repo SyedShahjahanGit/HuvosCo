@@ -40,7 +40,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
-          key: ${{ secrets.SSH_KEY }}
+          key: ${{ secrets.SSH_KEY }} # Modified entire deployment
           script: |
             cd HuvosCo
             sudo cp -r dist/* /var/www/HuvosCo
